@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Should You Adopt a Dog</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <script defer src="script.js"></script>
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Title and Subtitle Section -->
+  <div class="title-container">
+    <h1>Why Should You Adopt a Dog</h1>
+    <h2>Adopt, Don't Shop</h2>
+  </div>
+
+  <!-- Hero Image Section -->
+  <div class="hero-container">
+    <img src="assets/images/hero_image.png" alt="Hero image of adopting a dog" class="hero-image">
+  </div>
+
+  <!-- Green Subtext Block -->
+  <div class="subtext-container">
+    <div class="subtext-content">
+      <p>Choosing to adopt a dog not only enriches your life but also gives the dog an opportunity
+        to live in comfort and security. By adopting, you provide a loving home and save a life, making a meaningful
+        difference for both you and the dog.</p>
+    </div>
+  </div>
+
+  <!-- "The Current Trend" Section -->
+  <div class="trend-container">
+    <h2>The Current Trend</h2>
+  </div>
+
+  <!-- Main Content Area (with light green background) -->
+  <div class="main-content">
+    <!-- New Section with Pie Charts and Info Blurb -->
+    <section id="new-graphs-section">
+      <div class="graph-container">
+        <h2>Adopted vs Purchased</h2>
+        <div id="pie-chart1" class="chart-box"></div>
+        <p>This pie chart shows the proportion of dogs that are adopted versus purchased.</p>
+      </div>
+
+      <div class="info-container">
+        <div class="info-content">
+          <p><span class="large-text">200,000</span></p>
+          <p>dogs are surrendered to shelters annually.</p>
+          <p>Puppy farms are facilities where dogs are repeatedly bred for profit, often receiving inadequate care. These dogs are deprived of the love, comfort, and companionship they deserve, living in cramped and unsanitary conditions. Shockingly, 85% of the 450,000 puppies sold annually in Australia come from these environments. To help prevent this cruelty, consider adopting from shelters instead.</p>
+        </div>
+      </div>
+
+      <div class="graph-container">
+        <h2>Percentage of Puppies from Puppy Farms</h2>
+        <div id="pie-chart2" class="chart-box"></div>
+        <p>This pie chart illustrates the percentage of puppies that come from puppy farms.</p>
+      </div>
+    </section>
+
+    <!-- Euthanasia Rates and Info Section (Side by Side) -->
+    <section id="euthanasia-section" class="side-by-side">
+      <!-- Hanging box for the Euthanasia Rates chart and info -->
+      <div class="hanging-box">Euthanasia Rates Information</div>
+      
+      <div class="chart-wrapper">
+        <h2>Euthanasia Rates Over Time</h2>
+        <p>This line graph shows the change in euthanasia rates from 1999 to 2023 at the RSPCA.</p>
+        <div id="chart2" class="chart-box"></div>
+      </div>
+
+      <div class="info-blurb euthanasia-info">
+        <div class="info-content">
+          <h2>Euthanasia Information</h2>
+          <p>Every day, 264 dogs and cats are euthanised in Australia, not because they are unwell, but simply because 
+             there aren’t enough homes for them. Of the dogs surrendered annually to shelters, tragically 20% of them never 
+             make it out. These numbers highlight the urgent need for more people to adopt and provide these animals with 
+             the loving homes they deserve.</p>
+          <p>The sharp reduction in numbers, particularly after 2013, is linked to stricter regulations like the Dog Regulations 2013 in Western Australia, which improved dog welfare standards. National initiatives such as the Australian Animal Welfare Strategy and changes to animal cruelty laws in NSW also contributed to better care, reducing the need for euthanasia due to behavioural and medical issues. These reforms highlight Australia’s growing focus on animal welfare.</p>
+        </div>
+      </div>
+    </section>
+
+  <!-- "The Current Trend" Section -->
+  <div class="trend-container">
+    <h2>The Adoption Process</h2>
+  </div>
+
+    <!-- Cost Comparison Section (Side by Side) -->
+    <section id="cost-section" class="side-by-side">
+      <!-- Hanging box for the Cost Comparison chart and info -->
+      <div class="hanging-box">The Cost Breakdown</div>
+
+      <div class="info-blurb cost-info">
+        <div class="info-content">
+          <h2>Cost Information</h2>
+          <p>By adopting a dog, you can avoid the high costs often associated with purchasing from a breeder. Many shelters take care of vaccinations, spaying, and even basic training, which helps reduce additional expenses. While owning a dog is still a financial commitment, adopting allows you to save money and, more importantly, save a life.</p>
+          <p>On average, buying a dog from a breeder costs over $5,000 more than adopting from a shelter in Victoria. While adopting does come with some costs, that money goes directly to support the shelter. You can also help your local shelter by purchasing essential items like food, bowls, toys, and treats from them.</p>
+        </div>
+      </div>
+
+      <div class="chart-wrapper">
+        <h2>Cost Comparison Between Adoption and Purchasing</h2>
+        <p>This diverging bar chart compares the costs of adopting a dog versus purchasing one in Australia.</p>
+        <div id="chart1" class="chart-box"></div>
+      </div>
+    </section>
+
+    <!-- Word Cloud Section (Full Width) -->
+    <section id="testimonials-section">
+      <div class="word-cloud-wrapper">
+        <div class="hanging-box">Testimonials From Adopters</div>
+        <h2>Word Cloud of Adopters' Feelings</h2>
+        <p>This word cloud represents the most frequently mentioned words by adopters when describing their experiences.</p>
+        <div id="word-cloud" class="chart-box"></div> <!-- Word Cloud Graph Container -->
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map-section">
+      <div class="map-wrapper">
+        <div class="hanging-box">Where You Can Adopt</div> <!-- Added hanging box -->
+        <h2>Location of Victorian Shelters</h2>
+        <p>Between January and June 2023, shelters across Victoria cared for 14,178 dogs. The concentration of major rescue shelters, such as the Lost Dogs Home and the RSPCA, is primarily in central Melbourne, where they have the most capacity for dogs. These figures highlight the ongoing demand for shelter services across the state, as many dogs require homes.</p>
+        <div id="chart3" class="chart-box"></div>
+      </div>
+    </section>
+
+  <!-- Footer -->
+  <footer>
+        <div class="sources-container">
+          <h2>Main Sources</h2>
+          <ul>
+            <li>PetRescue. (2022). <i>The State of Pet Adoption Report 2021-2022</i>. Retrieved from <a href="https://www.petrescue.com.au/library/articles/the-state-of-pet-adoption-report-2021-2022">https://www.petrescue.com.au</a></li>
+            <li>Four Paws Australia. (n.d.). <i>How designer dogs are spurring the puppy farming industry</i>. Retrieved from <a href="https://www.four-paws.org.au/our-stories/blog-news/how-designer-dogs-are-spurring-the-puppy-farming-industry">https://www.four-paws.org.au</a></li>
+            <li>Venngage. (n.d.). <i>How to develop healthy eating habits</i>. Retrieved from <a href="https://venngage.com/blog/what-is-an-infographic/">https://venngage.com</a></li>
+          </ul>
+  
+          <h2>Additional References</h2>
+          <ul>
+            <li>4 Paws Animal Rescue. (n.d.). <i>Adoption Process</i>. Retrieved from <a href="https://www.4pawsanimalrescue.org.au/adoption-process">https://www.4pawsanimalrescue.org.au</a></li>
+            <li>Pedigree. (n.d.). <i>PetRescue Partnership Success Stories</i>. Retrieved from <a href="https://www.pedigree.com.au/why-pedigree/petrescue-partnership/success-stories">https://www.pedigree.com.au</a></li>
+            <li>Nalzo. (n.d.). <i>Dog Rehoming Statistics Australia</i>. Retrieved from <a href="https://nalzo.com.au/blogs/tips/dog-rehoming-statistics-australia">https://nalzo.com.au</a></li>
+          </ul>
+        </div>
+    <p>© 2024 Rosie Williams | FIT3179 - Assignment 2</p>
+  </footer>
+</body>
+</html>
